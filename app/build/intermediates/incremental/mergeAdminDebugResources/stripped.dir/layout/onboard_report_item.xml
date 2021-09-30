@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/onboard_report_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/route"
+            style="@style/FontMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:background="@color/gray_10"
+            tools:text="Ferns city" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/text_hint"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/percentage_symbol" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:text="@string/total_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_customers_added_label" />
+
+
+            <TextView
+                android:id="@+id/totalCustomersCount"
+                android:textColor="@color/text_primary"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="122" />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/name_mobilenumber_available_count" />
+
+            <TextView
+                android:id="@+id/nameOrMobileNumberAvailableCountPercentage"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+            <TextView
+                android:id="@+id/nameOrMobileNumberAvailableCount"
+                android:textColor="@color/green"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/name_mobilenumber_not_added_count" />
+
+            <TextView
+                android:id="@+id/nameOrMobileNumberNotAddedCountPercentage"
+                android:textColor="@color/warning_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+            <TextView
+                android:id="@+id/nameOrMobileNumberNotAddedCount"
+                android:textColor="@color/warning_red"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/customer_active_count" />
+
+            <TextView
+                android:id="@+id/customerActiveCountPercentage"
+                android:textColor="@color/warning_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+            <TextView
+                android:id="@+id/customerActiveCount"
+                android:textColor="@color/warning_red"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/customer_inactive_count" />
+
+            <TextView
+                android:id="@+id/customerInActiveCountPercentage"
+                android:textColor="@color/warning_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+            <TextView
+                android:id="@+id/customerInActiveCount"
+                android:textColor="@color/warning_red"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                tools:text="125" />
+
+        </LinearLayout>
+    </LinearLayout>
+         

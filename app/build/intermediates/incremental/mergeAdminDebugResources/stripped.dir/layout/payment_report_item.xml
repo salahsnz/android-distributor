@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/payment_report_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/route"
+            style="@style/FontMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_10"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            tools:text="Ferns city" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/text_hint"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:text="@string/percentage_symbol" />
+            <TextView
+                android:textColor="@color/text_hint"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:text="@string/bills_label" />
+
+            <TextView
+                android:textColor="@color/text_hint"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:text="@string/amount_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/billedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text= "@string/total_amount_billed_label" />
+
+
+            <TextView
+                android:id="@+id/totalNumberBilled"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountBilled"
+                android:textColor="@color/text_primary"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/paidOnlineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_online_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidOnlinePercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+            <TextView
+                android:id="@+id/totalNumberPaidOnline"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidOnline"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider" />
+        <!-- For CASH, GPAY,PAYTM.. -->
+        <LinearLayout
+            android:id="@+id/paidCashLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_cash_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidCashPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidCash"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidCash"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/cashDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidChequeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_cheque_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidChequePercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidCheque"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidCheque"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/chequeDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidGPayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_gpay_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidGPayPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidGPay"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidGpay"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/GpayDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidPaytmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_paytm_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidPaytmPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidPaytm"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidPaytm"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/paytmDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidPhonepeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_phonepe_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidPhonepePercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidPhonepe"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidPhonepe"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/phonepeDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidUPILayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_upi_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidUPIPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidUPI"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidUPI"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/upiDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/paidOtherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_paid_other_label" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidOtherPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalNumberPaidOther"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountPaidOther"
+                android:textColor="@color/green"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/otherDiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider"
+            android:visibility="gone"/>
+        <!-- For CASH, GPAY,PAYTM.. -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/divider" />
+        <LinearLayout
+            android:id="@+id/pendingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:text="@string/total_amount_unpaid_label" />
+
+            <TextView
+                android:id="@+id/totalNumberUnpaidPercentage"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+            <TextView
+                android:id="@+id/totalNumberUnpaid"
+                android:textColor="@color/text_secondary"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/totalAmountUnpaid"
+                android:textColor="@color/warning_red"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:text="\u20b9125,345.50" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+         

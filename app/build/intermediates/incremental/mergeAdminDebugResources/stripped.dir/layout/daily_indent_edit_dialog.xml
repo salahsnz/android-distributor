@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginLeft="8dp">
+
+    <ScrollView
+        android:layout_marginBottom="?actionBarSize"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textColor="@color/green"
+                style="@style/FontBold"
+                android:layout_gravity="end"
+                android:text="@string/button_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/save"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textAllCaps="true"
+                android:gravity="center"
+                style="@style/FontBold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:text="@string/button_save"
+                android:textColor="@color/green" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
