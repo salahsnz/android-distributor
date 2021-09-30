@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zopnote.android.merchant">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />     <!--for GcmTaskService-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Facebook Account Kit -->
+        <meta-data android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/zopnote_notification_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- Fabric -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="408c56feeb9d90d483b49031434a184a450817f0" />
+
+        <service
+            android:name=".util.RemoteConfigRefreshService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notifications.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notifications.GcmInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notifications.GcmRegistrationIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- For pre-4.4 Kitkat -->
+                <category android:name="in.ireff.android" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.distributor.myfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:theme="@style/AccountKitTheme"
+            tools:replace="android:theme" />
+
+        <activity android:name=".home.HomeActivity"
+            android:theme="@style/AppTheme.DrawerLayout"/>
+        <activity
+            android:name=".customers.CustomersActivity"
+            android:label="@string/title_activity_customers">
+        </activity>
+        <activity
+            android:name=".addcustomer.AddCustomerActivity"
+            android:label="@string/title_activity_add_customer" />
+        <activity android:name=".dailyindent.DailyIndentActivity"
+            android:label="@string/title_activity_daily_indent"/>
+        <activity
+            android:name=".invoice.InvoiceActivity"
+            android:label="@string/title_activity_invoice" />
+        <activity android:name=".viewcustomer.ViewCustomerActivity"
+            android:label="@string/title_activity_view_customer"/>
+        <activity
+            android:name=".addarea.AddAreaActivity"
+            android:label="@string/menu_add_area_title">
+        </activity>
+        <activity
+            android:name=".products.ProductsActivity"
+            android:label="@string/nav_products" />
+        <activity android:name=".intro.IntroActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.SplashActivity"
+            android:theme="@style/AppTheme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/title_activity_about" />
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:label="@string/info_label" />
+        <activity
+            android:name=".notifications.NotificationContentHiddenActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".notifications.NotificationClearedActivity"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".notifications.AppUpdateHiddenActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".notifications.AppUpdateNotificationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_app_update_notification"
+            android:launchMode="singleTask"
+            android:parentActivityName=".home.HomeActivity"
+            android:taskAffinity="">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".notifications.AnnouncementNotificationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_announcement"
+            android:launchMode="singleTask"
+            android:parentActivityName=".home.HomeActivity"
+            android:taskAffinity="">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.HomeActivity" />
+        </activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".search.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".vendor.VendorsActivity"
+            android:label="Select Vendor">
+        </activity>
+        <activity
+            android:name=".editcustomer.EditCustomerActivity"
+            android:label="Edit Customer">
+        </activity>
+        <activity
+            android:name=".addsubscription.AddSubscriptionActivity"
+            android:label="Add Subscription">
+        </activity>
+        <activity
+            android:name=".movecustomer.MoveCustomerActivity"
+            android:label="@string/title_activity_move_customer">
+        </activity>
+        <activity
+            android:name=".reports.ReportsActivity"
+            android:label="@string/title_activity_report">
+        </activity>
+        <activity android:name=".reports.onboarding.OnboardActivity"
+            android:label="@string/title_activity_onboarding_report">
+        </activity>
+        <activity
+            android:name=".reports.payments.PaymentsActivity"
+            android:label="@string/title_activity_payments">
+        </activity>
+        <activity
+            android:name=".managesubscription.ManageSubscriptionsActivity"
+            android:label="@string/title_activity_manage_subscriptions">
+        </activity>
+        <activity
+            android:name=".managesubscription.editsubscription.EditSubscriptionActivity"
+            android:label="@string/title_activity_edit_subscription">
+        </activity>
+        <activity
+            android:name=".managesubscription.editpause.EditPauseActivity"
+            android:label="@string/title_activity_edit_pause">
+        </activity>
+        <activity android:name=".invoice.editinvoice.EditInvoiceActivity"
+            android:label="@string/title_activity_edit_invoice">
+        </activity>
+        <activity
+            android:name=".reports.subscription.SubscriptionsReportActivity"
+            android:label="@string/title_activity_subscriptions">
+        </activity>
+        <activity
+            android:name=".reports.draftinvoice.DraftInvoiceReportActivity"
+            android:label="@string/title_activity_invoice_preview_report">
+        </activity>
+        <activity android:name=".editdraftinvoice.EditDraftInvoiceActivity"
+            android:label="@string/title_activity_edit_draft_invoice">
+        </activity>
+        <activity
+            android:name=".reports.settlement.SettlementReportActivity"
+            android:label="@string/title_activity_settlement_report">
+        </activity>
+        <activity
+            android:name=".reports.ordersummary.OrderSummaryReportActivity"
+            android:label="@string/title_activity_order_summary_report">
+        </activity>
+        <activity
+            android:name=".reports.ordersummarycustomerdetails.OrderSummaryCustomerDetailsReportActivity"
+            android:label="@string/title_activity_order_summary_customer_details_report">
+        </activity>
+        <activity
+            android:name=".managesubscription.viewcustomization.ViewCustomizationActivity"
+            android:label="@string/title_activity_view_customization">
+        </activity>
+        <activity
+            android:name=".managesubscription.addcustomization.AddCustomizationActivity"
+            android:label="@string/title_activity_add_customization">
+        </activity>
+        <activity
+            android:name=".products.editproduct.EditProductActivity">
+        </activity>
+        <activity
+            android:name=".products.addproduct.AddProductActivity"
+            android:label="@string/title_activity_add_product">
+        </activity>
+        <activity
+            android:name=".reports.collection.CollectionActivity"
+            android:label="@string/title_activity_collection">
+        </activity>
+        <activity
+            android:name=".viewinvoicehistory.ViewInvoiceHistoryActivity"
+            android:label="@string/title_activity_view_invoice_history">
+        </activity>
+        <activity
+            android:name=".updateinvoice.UpdateInvoiceActivity"
+            android:label="@string/title_activity_update_invoice">
+        </activity>
+        <activity
+            android:name=".registermerchant.RegisterMerchantActivity"
+            android:label="@string/title_activity_register_merchant">
+        </activity>
+        <activity
+            android:name=".addondemanditem.AddOnDemandActivity"
+            android:label="@string/title_activity_AddOnDemandItem">
+        </activity>
+        <activity
+            android:name=".notifications.inbox.InboxActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_notification_inbox">
+        </activity>
+        <activity
+            android:name=".agreement.AgreementActivity">
+        </activity>
+        <activity
+            android:name=".notifications.notificationpanel.NotificationDashboardActivity"
+            android:label="@string/title_activity_notification_dashboard">
+        </activity>
+        <activity
+            android:name=".addroute.AddRouteActivity">
+        </activity>
+        <activity
+            android:name=".merchantsetup.MerchantProfileActivity">
+        </activity>
+        <activity
+            android:name=".merchantsetup.MerchantKYCActivity">
+        </activity>
+        <activity
+            android:name=".merchantsetup.MerchantBankInfoActivity">
+        </activity>
+        <activity
+            android:name=".merchantsetup.ShopSetupActivity">
+        </activity>
+        <activity
+            android:name=".merchantsetup.ProductSetupActivity">
+        </activity>
+        <activity
+            android:name=".activatemerchant.ActivateMerchantActivity">
+        </activity>
+
+    </application>
+
+</manifest>

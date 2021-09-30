@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+                 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/view_customer_frag_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_gray_rectangle_solid_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        tools:text="Rajesh Badgeri" />
+
+                    <TextView
+                        android:id="@+id/nameMobileSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/text_hint"
+                        android:textSize="14sp"
+                        android:text="@string/bullet_char" />
+
+                    <LinearLayout
+                        android:id="@+id/mobileNumberLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mobileNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            tools:text="9790007482" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="8dp"
+                            app:srcCompat="@drawable/ic_content_copy_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/gray_50_opaque"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/addNumber"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        app:srcCompat="@drawable/ic_cloud_upload_black_24dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/gray_50_opaque"/>
+                    <ImageView
+                        android:id="@+id/subscriberView"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        app:srcCompat="@drawable/ic_web_black_24dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/gray_50_opaque"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/doorNumber"
+                        style="@style/FontMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        tools:text="136" />
+
+                    <LinearLayout
+                        android:id="@+id/addressLine1Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/text_hint"
+                            android:textSize="16sp"
+                            android:text="@string/bullet_char" />
+
+                        <TextView
+                            android:id="@+id/addressLine1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="16sp"
+                            tools:text="I Floor, Block B" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addressLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    tools:text="Ferns City" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    tools:text="rajesh@email.com" />
+
+                <TextView
+                    android:id="@+id/route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary"
+                    tools:text="Route 16"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoiceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAllCaps="true"
+                    android:text="@string/bill_label"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:text="@string/total_due_label"/>
+
+                        <ImageView
+                            android:backgroundTint="@color/gray_50"
+                            android:id="@+id/editInvoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="8dp"
+                            android:background="@drawable/com_accountkit_pencil" />
+
+                        <TextView
+                            android:id="@+id/invoiceAmount"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/text_primary"
+                            tools:text="₹176"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/invoicePaidDateLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:text="@string/paid_date"/>
+
+                        <TextView
+                            android:id="@+id/invoicePaidDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_secondary"
+                            tools:text="Pending"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:text="@string/status_label"/>
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:paddingRight="8dp"
+                            android:id="@+id/cashPaymentReverseButton"
+                            app:srcCompat="@drawable/ic_rotate_left_red_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/paymentMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_secondary"
+                            tools:text="Pending"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/viewBillButton"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:layout_gravity="right"
+                            android:textSize="14sp"
+                            android:textColor="@color/accent"
+                            android:textAllCaps="true"
+                            android:text="@string/view_bill_label"
+                            android:background="?android:attr/selectableItemBackground"/>
+
+                        <TextView
+                            android:id="@+id/cashPaymentButton"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:layout_gravity="right"
+                            android:textSize="14sp"
+                            android:textColor="@color/accent"
+                            android:textAllCaps="true"
+                            android:text="@string/accept_cash_payment_label"
+                            android:background="?android:attr/selectableItemBackground"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sendRemainder"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:background="@drawable/circle_accent_bg"
+                        app:srcCompat="@drawable/com_accountkit_check_sms"
+                        android:tint="@color/white"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_primary"
+                        android:textAlignment="center"
+                        android:text="Send Reminder"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/callCustomer"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:tint="@color/white"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:background="@drawable/circle_accent_bg"
+                        app:srcCompat="@drawable/com_accountkit_get_call"
+                        android:text="@color/white"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_primary"
+                        android:textAlignment="center"
+                        android:text="Call"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/billHistory"
+                android:theme="@style/SubduedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_old_bills"
+                />
+            <Button
+                android:visibility="visible"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/addItemButton"
+                android:theme="@style/NormalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_order"
+                />
+
+            <LinearLayout
+                android:id="@+id/subscriptionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:textAllCaps="true"
+                        android:text="@string/subscriptions_label"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/manageSubscriptionButton"
+                        style="@style/FontMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/accent"
+                        android:textAllCaps="true"
+                        android:text="@string/manage_subscription_label"
+                        android:gravity="right"
+                        android:background="?android:attr/selectableItemBackground"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divider"/>
+
+                <LinearLayout
+                    android:id="@+id/subscriptionsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/notesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAllCaps="true"
+                    android:text="@string/notes_label"/>
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary"
+                    tools:text="Route 16"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/createdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAllCaps="true"
+                    android:text="@string/created_label"/>
+
+                <TextView
+                    android:id="@+id/created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_primary"
+                    tools:text="22 Sept 2018 6:30 AM"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+         

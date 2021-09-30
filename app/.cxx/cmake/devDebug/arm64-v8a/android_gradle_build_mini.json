@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "E:\\Android\\project\\Zopnote2\\NewspaperDealerApp\\app\\CMakeLists.txt",
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\Android\\project\\Zopnote2\\NewspaperDealerApp\\app\\.cxx\\cmake\\devDebug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\Android\\project\\Zopnote2\\NewspaperDealerApp\\app\\.cxx\\cmake\\devDebug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-arm64-v8a": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\Android\\project\\Zopnote2\\NewspaperDealerApp\\app\\.cxx\\cmake\\devDebug\\arm64-v8a\" native-lib",
+      "abi": "arm64-v8a",
+      "output": "E:\\Android\\project\\Zopnote2\\NewspaperDealerApp\\app\\build\\intermediates\\cmake\\devDebug\\obj\\arm64-v8a\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

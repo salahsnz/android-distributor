@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        tools:context=".customers.CustomersActivity" android:tag="layout/merchant_bank_info_frag_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stepTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:background="@color/gray_bg"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_primary"
+                    tools:text="Bank Info"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bankinfo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                </ImageView>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/accountName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/account_name_label"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:maxLength="25"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/accountNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/account_no_label"
+                            android:maxLength="20"
+                            android:inputType="number"
+                            android:imeOptions="actionNext"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ifscCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="11"
+                        android:hint="@string/ifsc_code_label"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/bankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/bank_name_label"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="25"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/title_activity_app_update_notification"
+                        android:id="@+id/submitBankInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingHorizontal="24dp"
+                        android:theme="@style/NormalButton" />
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/button_close"
+                        android:id="@+id/closeBankInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingHorizontal="24dp"
+                        android:theme="@style/NormalButton" />
+
+                </LinearLayout>
+
+
+
+                    </LinearLayout>
+                <!--/FrameLayout-->
+
+        <include
+            android:id="@+id/networkErrorView"
+            layout="@layout/network_error" />
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view" />
+
+            </LinearLayout>
+
+        <!--/android.support.design.widget.CoordinatorLayout-->
+         

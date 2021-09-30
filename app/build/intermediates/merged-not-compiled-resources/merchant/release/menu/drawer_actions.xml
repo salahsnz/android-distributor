@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/about_navigation_menu_item"
+        android:icon="@drawable/ic_about_us_vector"
+        android:title="@string/menu_about_title" />
+    <item
+        android:id="@+id/app_share_navigation_menu_item"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/menu_share_app_title" />
+
+    <item
+        android:id="@+id/agreement_navigation_menu_item"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="@string/menu_agreement_title" />
+
+    <item
+        android:id="@+id/add_route_navigation_menu_item"
+        android:icon="@drawable/split"
+        android:title="@string/menu_add_route_title" />
+    <item
+        android:id="@+id/add_area_navigation_menu_item"
+        android:icon="@drawable/location_pointer"
+        android:title="@string/menu_add_area_title" />
+
+    <item
+        android:id="@+id/merchant_setup_navigation_menu_item"
+        android:icon="@drawable/ic_baseline_group_add_24"
+        android:title="@string/menu_merchant_setup_title" />
+    <item
+        android:id="@+id/shop_setup_navigation_menu_item"
+        android:icon="@drawable/ic_baseline_storefront_24"
+        android:title="@string/menu_shop_setup_title" />
+
+    <item
+        android:id="@+id/log_out_menu_item"
+        android:icon="@drawable/ic_input_black_24dp"
+        android:title="@string/menu_log_out_title" />
+
+    <item
+        android:id="@+id/switch_vendor_navigation_menu_item"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:title="@string/menu_switch_vendor" />
+</menu>

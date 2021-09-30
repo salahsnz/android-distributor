@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from product flavor: merchant -->
+    <string name="firebase_database_url" translatable="false">https://zopnote.firebaseio.com</string>
+    <!-- Value from product flavor: merchant -->
+    <string name="google_api_key" translatable="false">AIzaSyDSch3QICPEVBaJFonAeTkemF-Sfiuae0A</string>
+    <!-- Value from product flavor: merchant -->
+    <string name="google_app_id" translatable="false">1:898261426758:android:431e4e7178966d74</string>
+    <!-- Value from product flavor: merchant -->
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDSch3QICPEVBaJFonAeTkemF-Sfiuae0A</string>
+    <!-- Value from product flavor: merchant -->
+    <string name="project_id" translatable="false">zopnote</string>
+
+</resources>

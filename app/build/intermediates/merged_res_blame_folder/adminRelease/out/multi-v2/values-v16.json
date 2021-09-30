@@ -1,0 +1,76 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Zopnote\\Zopnote2\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeAdminReleaseResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Zopnote\\Zopnote2\\ZopnoteDistributorApp\\app\\src\\main\\res\\values-v16\\styles.xml",
+                    "from": {
+                        "startLines": "7,3,12",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "165,59,321",
+                        "endLines": "10,5,14",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "313,157,423"
+                    },
+                    "to": {
+                        "startLines": "18,22,25",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "866,1016,1117",
+                        "endLines": "21,24,27",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "1011,1112,1217"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\salah\\.gradle\\caches\\transforms-2\\files-2.1\\390c22649dce597dff6ebd482cc9fd30\\appcompat-v7-28.0.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "1222",
+                        "endLines": "31",
+                        "endColumns": "12",
+                        "endOffsets": "1390"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\salah\\.gradle\\caches\\transforms-2\\files-2.1\\3d05fac9361feeeb8c969f7a19fcea94\\support-compat-28.0.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\salah\\.gradle\\caches\\transforms-2\\files-2.1\\d11b4469a5746b861e3d0f0c7e725a20\\account-kit-sdk-5.4.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2,5,8,11,14",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,215,358,510,652",
+                        "endLines": "4,7,10,13,16",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "210,353,505,647,795"
+                    },
+                    "to": {
+                        "startLines": "3,6,9,12,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "121,281,424,576,718",
+                        "endLines": "5,8,11,14,17",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "276,419,571,713,861"
+                    }
+                }
+            ]
+        }
+    ]
+}

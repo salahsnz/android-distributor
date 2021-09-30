@@ -1,0 +1,866 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zopnote.android.dealer.debug"
+4    android:versionCode="35"
+5    android:versionName="0.9.34" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CALL_PHONE" />
+11-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:6:5-69
+11-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:6:22-66
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:7:5-67
+12-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:8:5-79
+13-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- for GcmTaskService -->
+14-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:9:5-81
+14-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:10:5-68
+15-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:11:5-80
+16-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:12:5-64
+17-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:12:22-62
+18    <uses-permission android:name="android.permission.READ_CONTACTS" />
+18-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:13:5-71
+18-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:13:22-69
+19
+20    <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.android.gms:play-services-gcm:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1f4396e32175d9cadd51278bd3ec5bf8\play-services-gcm-11.8.0\AndroidManifest.xml:23:5-82
+21-->[com.google.android.gms:play-services-gcm:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1f4396e32175d9cadd51278bd3ec5bf8\play-services-gcm-11.8.0\AndroidManifest.xml:23:22-79
+22
+23    <permission
+23-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:28:5-30:47
+24        android:name="com.zopnote.android.dealer.debug.permission.C2D_MESSAGE"
+24-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:29:9-63
+25        android:protectionLevel="signature" />
+25-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:30:9-44
+26
+27    <uses-permission android:name="com.zopnote.android.dealer.debug.permission.C2D_MESSAGE" />
+27-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:32:5-79
+27-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:32:22-76
+28
+29    <application
+29-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:15:5-324:19
+30        android:name="com.zopnote.android.merchant.MyApplication"
+30-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:16:9-38
+31        android:allowBackup="false"
+31-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:17:9-36
+32        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+32-->[com.android.support:support-compat:28.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3d05fac9361feeeb8c969f7a19fcea94\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+33        android:debuggable="true"
+34        android:fullBackupContent="false"
+34-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:18:9-42
+35        android:icon="@mipmap/ic_launcher"
+35-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:19:9-43
+36        android:label="@string/app_name"
+36-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:20:9-41
+37        android:requestLegacyExternalStorage="true"
+37-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:23:9-52
+38        android:supportsRtl="true"
+38-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:21:9-35
+39        android:theme="@style/AppTheme"
+39-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:24:9-40
+40        android:usesCleartextTraffic="true" >
+40-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:22:9-44
+41
+42        <!-- Facebook Account Kit -->
+43        <meta-data
+43-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:27:9-28:48
+44            android:name="com.facebook.accountkit.ApplicationName"
+44-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:27:20-74
+45            android:value="@string/app_name" />
+45-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:28:13-45
+46        <meta-data
+46-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:29:9-30:55
+47            android:name="com.facebook.sdk.ApplicationId"
+47-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:29:20-65
+48            android:value="@string/FACEBOOK_APP_ID" />
+48-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:30:13-52
+49        <meta-data
+49-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:31:9-32:64
+50            android:name="com.facebook.accountkit.ClientToken"
+50-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:31:20-70
+51            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+51-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:32:13-61
+52        <meta-data
+52-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:33:9-35:70
+53            android:name="com.google.firebase.messaging.default_notification_icon"
+53-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:34:13-83
+54            android:resource="@drawable/zopnote_notification_logo" />
+54-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:35:13-67
+55        <meta-data
+55-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:36:9-38:53
+56            android:name="com.google.firebase.messaging.default_notification_color"
+56-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:37:13-84
+57            android:resource="@color/colorAccent" />
+57-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:38:13-50
+58
+59        <!-- Fabric -->
+60        <meta-data
+60-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:41:9-43:72
+61            android:name="io.fabric.ApiKey"
+61-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:42:13-44
+62            android:value="408c56feeb9d90d483b49031434a184a450817f0" />
+62-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:43:13-69
+63
+64        <service
+64-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:45:9-52:19
+65            android:name="com.zopnote.android.merchant.util.RemoteConfigRefreshService"
+65-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:46:13-60
+66            android:exported="true"
+66-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:47:13-36
+67            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+67-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:48:13-93
+68            <intent-filter>
+68-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:49:13-51:29
+69                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+69-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:50:17-87
+69-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:50:25-84
+70            </intent-filter>
+71        </service>
+72        <service
+72-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:53:9-59:19
+73            android:name="com.zopnote.android.merchant.notifications.MyGcmListenerService"
+73-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:54:13-63
+74            android:exported="false" >
+74-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:55:13-37
+75            <intent-filter>
+75-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:56:13-58:29
+76                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+76-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:17-81
+76-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:25-78
+77            </intent-filter>
+78        </service>
+79        <service
+79-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:60:9-66:19
+80            android:name="com.zopnote.android.merchant.notifications.GcmInstanceIDListenerService"
+80-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:61:13-71
+81            android:exported="false" >
+81-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:62:13-37
+82            <intent-filter>
+82-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:63:13-65:29
+83                <action android:name="com.google.android.gms.iid.InstanceID" />
+83-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:64:17-80
+83-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:64:25-77
+84            </intent-filter>
+85        </service>
+86        <service
+86-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:67:9-69:40
+87            android:name="com.zopnote.android.merchant.notifications.GcmRegistrationIntentService"
+87-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:68:13-71
+88            android:exported="false" />
+88-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:69:13-37
+89
+90        <receiver
+90-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:71:9-81:20
+91            android:name="com.google.android.gms.gcm.GcmReceiver"
+91-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:72:13-66
+92            android:exported="true"
+92-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:73:13-36
+93            android:permission="com.google.android.c2dm.permission.SEND" >
+93-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:74:13-73
+94            <intent-filter>
+94-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:75:13-80:29
+95                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+95-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:17-81
+95-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:25-78
+96                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+96-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:77:17-86
+96-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:77:25-83
+97                <!-- For pre-4.4 Kitkat -->
+98                <category android:name="in.ireff.android" />
+98-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:79:17-61
+98-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:79:27-58
+99            </intent-filter>
+100        </receiver>
+101
+102        <provider
+102-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:83:9-94:20
+103            android:name="android.support.v4.content.FileProvider"
+103-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:84:13-67
+104            android:authorities="com.distributor.myfileprovider"
+104-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:85:13-65
+105            android:exported="false"
+105-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:86:13-37
+106            android:grantUriPermissions="true" >
+106-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:87:13-47
+107            <meta-data
+107-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:91:13-93:63
+108                android:name="android.support.FILE_PROVIDER_PATHS"
+108-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:92:17-67
+109                android:resource="@xml/file_provider_paths" />
+109-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:93:17-60
+110        </provider>
+111
+112        <activity
+112-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:96:9-99:45
+113            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+113-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:97:13-73
+114            android:label="@string/com_accountkit_button_log_in"
+114-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:31:13-65
+115            android:launchMode="singleTop"
+115-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:32:13-43
+116            android:theme="@style/AccountKitTheme"
+116-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:98:13-51
+117            android:windowSoftInputMode="adjustResize" />
+117-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:34:13-55
+118        <activity
+118-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:101:9-102:59
+119            android:name="com.zopnote.android.merchant.home.HomeActivity"
+119-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:101:19-52
+120            android:theme="@style/AppTheme.DrawerLayout" />
+120-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:102:13-57
+121        <activity
+121-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:103:9-106:20
+122            android:name="com.zopnote.android.merchant.customers.CustomersActivity"
+122-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:104:13-56
+123            android:label="@string/title_activity_customers" >
+123-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:105:13-61
+124        </activity>
+125        <activity
+125-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:107:9-109:67
+126            android:name="com.zopnote.android.merchant.addcustomer.AddCustomerActivity"
+126-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:108:13-60
+127            android:label="@string/title_activity_add_customer" />
+127-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:109:13-64
+128        <activity
+128-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:110:9-111:66
+129            android:name="com.zopnote.android.merchant.dailyindent.DailyIndentActivity"
+129-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:110:19-66
+130            android:label="@string/title_activity_daily_indent" />
+130-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:111:13-64
+131        <activity
+131-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:112:9-114:62
+132            android:name="com.zopnote.android.merchant.invoice.InvoiceActivity"
+132-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:113:13-52
+133            android:label="@string/title_activity_invoice" />
+133-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:114:13-59
+134        <activity
+134-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:115:9-116:67
+135            android:name="com.zopnote.android.merchant.viewcustomer.ViewCustomerActivity"
+135-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:115:19-68
+136            android:label="@string/title_activity_view_customer" />
+136-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:116:13-65
+137        <activity
+137-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:117:9-120:20
+138            android:name="com.zopnote.android.merchant.addarea.AddAreaActivity"
+138-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:118:13-52
+139            android:label="@string/menu_add_area_title" >
+139-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:119:13-56
+140        </activity>
+141        <activity
+141-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:121:9-123:52
+142            android:name="com.zopnote.android.merchant.products.ProductsActivity"
+142-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:122:13-54
+143            android:label="@string/nav_products" />
+143-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:123:13-49
+144        <activity
+144-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:124:9-125:51
+145            android:name="com.zopnote.android.merchant.intro.IntroActivity"
+145-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:124:19-54
+146            android:screenOrientation="portrait" />
+146-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:125:13-49
+147        <activity
+147-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:126:9-133:20
+148            android:name="com.zopnote.android.merchant.ui.SplashActivity"
+148-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:126:19-52
+149            android:theme="@style/AppTheme.SplashScreen" >
+149-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:127:13-57
+150            <intent-filter>
+150-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:128:13-132:29
+151                <action android:name="android.intent.action.MAIN" />
+151-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:129:17-69
+151-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:129:25-66
+152
+153                <category android:name="android.intent.category.LAUNCHER" />
+153-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:131:17-77
+153-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:131:27-74
+154            </intent-filter>
+155        </activity>
+156        <activity
+156-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:134:9-136:60
+157            android:name="com.zopnote.android.merchant.ui.AboutActivity"
+157-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:135:13-45
+158            android:label="@string/title_activity_about" />
+158-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:136:13-57
+159        <activity
+159-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:137:9-139:50
+160            android:name="com.zopnote.android.merchant.ui.WebViewActivity"
+160-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:138:13-47
+161            android:label="@string/info_label" />
+161-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:139:13-47
+162        <activity
+162-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:140:9-143:62
+163            android:name="com.zopnote.android.merchant.notifications.NotificationContentHiddenActivity"
+163-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:141:13-76
+164            android:noHistory="true"
+164-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:142:13-37
+165            android:theme="@android:style/Theme.NoDisplay" />
+165-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:143:13-59
+166        <activity
+166-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:144:9-148:62
+167            android:name="com.zopnote.android.merchant.notifications.NotificationClearedActivity"
+167-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:145:13-70
+168            android:noHistory="true"
+168-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:146:13-37
+169            android:taskAffinity=""
+169-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:147:13-36
+170            android:theme="@android:style/Theme.NoDisplay" />
+170-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:148:13-59
+171        <activity
+171-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:149:9-152:62
+172            android:name="com.zopnote.android.merchant.notifications.AppUpdateHiddenActivity"
+172-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:150:13-66
+173            android:noHistory="true"
+173-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:151:13-37
+174            android:theme="@android:style/Theme.NoDisplay" />
+174-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:152:13-59
+175        <activity
+175-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:153:9-165:20
+176            android:name="com.zopnote.android.merchant.notifications.AppUpdateNotificationActivity"
+176-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:154:13-72
+177            android:excludeFromRecents="true"
+177-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:155:13-46
+178            android:label="@string/title_activity_app_update_notification"
+178-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:156:13-75
+179            android:launchMode="singleTask"
+179-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:157:13-44
+180            android:parentActivityName="com.zopnote.android.merchant.home.HomeActivity"
+180-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:158:13-60
+181            android:taskAffinity="" >
+181-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:159:13-36
+182
+183            <!-- Parent activity meta-data to support 4.0 and lower -->
+184            <meta-data
+184-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:162:13-164:54
+185                android:name="android.support.PARENT_ACTIVITY"
+185-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:163:17-63
+186                android:value=".home.HomeActivity" />
+186-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:164:17-51
+187        </activity>
+188        <activity
+188-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:166:9-178:20
+189            android:name="com.zopnote.android.merchant.notifications.AnnouncementNotificationActivity"
+189-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:167:13-75
+190            android:excludeFromRecents="true"
+190-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:168:13-46
+191            android:label="@string/title_activity_announcement"
+191-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:169:13-64
+192            android:launchMode="singleTask"
+192-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:170:13-44
+193            android:parentActivityName="com.zopnote.android.merchant.home.HomeActivity"
+193-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:171:13-60
+194            android:taskAffinity="" >
+194-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:172:13-36
+195
+196            <!-- Parent activity meta-data to support 4.0 and lower -->
+197            <meta-data
+197-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:162:13-164:54
+198                android:name="android.support.PARENT_ACTIVITY"
+198-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:163:17-63
+199                android:value=".home.HomeActivity" />
+199-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:164:17-51
+200        </activity>
+201        <activity android:name="com.zopnote.android.merchant.login.LoginActivity" />
+201-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:179:9-57
+201-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:179:19-54
+202        <activity
+202-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:180:9-189:20
+203            android:name="com.zopnote.android.merchant.search.SearchActivity"
+203-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:181:13-50
+204            android:label="@string/title_activity_search"
+204-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:182:13-58
+205            android:launchMode="singleTop" >
+205-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:183:13-43
+206            <intent-filter>
+206-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:184:13-186:29
+207                <action android:name="android.intent.action.SEARCH" />
+207-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:185:17-71
+207-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:185:25-68
+208            </intent-filter>
+209
+210            <meta-data
+210-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:187:13-188:53
+211                android:name="android.app.searchable"
+211-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:187:24-61
+212                android:resource="@xml/searchable" />
+212-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:188:17-51
+213        </activity>
+214        <activity
+214-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:190:9-193:20
+215            android:name="com.zopnote.android.merchant.vendor.VendorsActivity"
+215-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:191:13-51
+216            android:label="Select Vendor" >
+216-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:192:13-42
+217        </activity>
+218        <activity
+218-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:194:9-197:20
+219            android:name="com.zopnote.android.merchant.editcustomer.EditCustomerActivity"
+219-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:195:13-62
+220            android:label="Edit Customer" >
+220-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:196:13-42
+221        </activity>
+222        <activity
+222-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:198:9-201:20
+223            android:name="com.zopnote.android.merchant.addsubscription.AddSubscriptionActivity"
+223-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:199:13-68
+224            android:label="Add Subscription" >
+224-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:200:13-45
+225        </activity>
+226        <activity
+226-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:202:9-205:20
+227            android:name="com.zopnote.android.merchant.movecustomer.MoveCustomerActivity"
+227-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:203:13-62
+228            android:label="@string/title_activity_move_customer" >
+228-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:204:13-65
+229        </activity>
+230        <activity
+230-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:206:9-209:20
+231            android:name="com.zopnote.android.merchant.reports.ReportsActivity"
+231-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:207:13-52
+232            android:label="@string/title_activity_report" >
+232-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:208:13-58
+233        </activity>
+234        <activity
+234-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:210:9-212:20
+235            android:name="com.zopnote.android.merchant.reports.onboarding.OnboardActivity"
+235-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:210:19-69
+236            android:label="@string/title_activity_onboarding_report" >
+236-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:211:13-69
+237        </activity>
+238        <activity
+238-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:213:9-216:20
+239            android:name="com.zopnote.android.merchant.reports.payments.PaymentsActivity"
+239-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:214:13-62
+240            android:label="@string/title_activity_payments" >
+240-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:215:13-60
+241        </activity>
+242        <activity
+242-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:217:9-220:20
+243            android:name="com.zopnote.android.merchant.managesubscription.ManageSubscriptionsActivity"
+243-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:218:13-75
+244            android:label="@string/title_activity_manage_subscriptions" >
+244-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:219:13-72
+245        </activity>
+246        <activity
+246-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:221:9-224:20
+247            android:name="com.zopnote.android.merchant.managesubscription.editsubscription.EditSubscriptionActivity"
+247-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:222:13-89
+248            android:label="@string/title_activity_edit_subscription" >
+248-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:223:13-69
+249        </activity>
+250        <activity
+250-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:225:9-228:20
+251            android:name="com.zopnote.android.merchant.managesubscription.editpause.EditPauseActivity"
+251-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:226:13-75
+252            android:label="@string/title_activity_edit_pause" >
+252-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:227:13-62
+253        </activity>
+254        <activity
+254-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:229:9-231:20
+255            android:name="com.zopnote.android.merchant.invoice.editinvoice.EditInvoiceActivity"
+255-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:229:19-74
+256            android:label="@string/title_activity_edit_invoice" >
+256-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:230:13-64
+257        </activity>
+258        <activity
+258-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:232:9-235:20
+259            android:name="com.zopnote.android.merchant.reports.subscription.SubscriptionsReportActivity"
+259-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:233:13-77
+260            android:label="@string/title_activity_subscriptions" >
+260-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:234:13-65
+261        </activity>
+262        <activity
+262-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:236:9-239:20
+263            android:name="com.zopnote.android.merchant.reports.draftinvoice.DraftInvoiceReportActivity"
+263-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:237:13-76
+264            android:label="@string/title_activity_invoice_preview_report" >
+264-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:238:13-74
+265        </activity>
+266        <activity
+266-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:240:9-242:20
+267            android:name="com.zopnote.android.merchant.editdraftinvoice.EditDraftInvoiceActivity"
+267-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:240:19-76
+268            android:label="@string/title_activity_edit_draft_invoice" >
+268-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:241:13-70
+269        </activity>
+270        <activity
+270-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:243:9-246:20
+271            android:name="com.zopnote.android.merchant.reports.settlement.SettlementReportActivity"
+271-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:244:13-72
+272            android:label="@string/title_activity_settlement_report" >
+272-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:245:13-69
+273        </activity>
+274        <activity
+274-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:247:9-250:20
+275            android:name="com.zopnote.android.merchant.reports.ordersummary.OrderSummaryReportActivity"
+275-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:248:13-76
+276            android:label="@string/title_activity_order_summary_report" >
+276-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:249:13-72
+277        </activity>
+278        <activity
+278-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:251:9-254:20
+279            android:name="com.zopnote.android.merchant.reports.ordersummarycustomerdetails.OrderSummaryCustomerDetailsReportActivity"
+279-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:252:13-106
+280            android:label="@string/title_activity_order_summary_customer_details_report" >
+280-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:253:13-89
+281        </activity>
+282        <activity
+282-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:255:9-258:20
+283            android:name="com.zopnote.android.merchant.managesubscription.viewcustomization.ViewCustomizationActivity"
+283-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:256:13-91
+284            android:label="@string/title_activity_view_customization" >
+284-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:257:13-70
+285        </activity>
+286        <activity
+286-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:259:9-262:20
+287            android:name="com.zopnote.android.merchant.managesubscription.addcustomization.AddCustomizationActivity"
+287-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:260:13-89
+288            android:label="@string/title_activity_add_customization" >
+288-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:261:13-69
+289        </activity>
+290        <activity android:name="com.zopnote.android.merchant.products.editproduct.EditProductActivity" >
+290-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:263:9-265:20
+290-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:264:13-69
+291        </activity>
+292        <activity
+292-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:266:9-269:20
+293            android:name="com.zopnote.android.merchant.products.addproduct.AddProductActivity"
+293-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:267:13-67
+294            android:label="@string/title_activity_add_product" >
+294-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:268:13-63
+295        </activity>
+296        <activity
+296-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:270:9-273:20
+297            android:name="com.zopnote.android.merchant.reports.collection.CollectionActivity"
+297-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:271:13-66
+298            android:label="@string/title_activity_collection" >
+298-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:272:13-62
+299        </activity>
+300        <activity
+300-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:274:9-277:20
+301            android:name="com.zopnote.android.merchant.viewinvoicehistory.ViewInvoiceHistoryActivity"
+301-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:275:13-74
+302            android:label="@string/title_activity_view_invoice_history" >
+302-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:276:13-72
+303        </activity>
+304        <activity
+304-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:278:9-281:20
+305            android:name="com.zopnote.android.merchant.updateinvoice.UpdateInvoiceActivity"
+305-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:279:13-64
+306            android:label="@string/title_activity_update_invoice" >
+306-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:280:13-66
+307        </activity>
+308        <activity
+308-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:282:9-285:20
+309            android:name="com.zopnote.android.merchant.registermerchant.RegisterMerchantActivity"
+309-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:283:13-70
+310            android:label="@string/title_activity_register_merchant" >
+310-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:284:13-69
+311        </activity>
+312        <activity
+312-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:286:9-289:20
+313            android:name="com.zopnote.android.merchant.addondemanditem.AddOnDemandActivity"
+313-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:287:13-64
+314            android:label="@string/title_activity_AddOnDemandItem" >
+314-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:288:13-67
+315        </activity>
+316        <activity
+316-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:290:9-294:20
+317            android:name="com.zopnote.android.merchant.notifications.inbox.InboxActivity"
+317-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:291:13-62
+318            android:label="@string/title_activity_notification_inbox"
+318-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:293:13-70
+319            android:launchMode="singleTop" >
+319-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:292:13-43
+320        </activity>
+321        <activity android:name="com.zopnote.android.merchant.agreement.AgreementActivity" >
+321-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:295:9-297:20
+321-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:296:13-56
+322        </activity>
+323        <activity
+323-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:298:9-301:20
+324            android:name="com.zopnote.android.merchant.notifications.notificationpanel.NotificationDashboardActivity"
+324-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:299:13-90
+325            android:label="@string/title_activity_notification_dashboard" >
+325-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:300:13-74
+326        </activity>
+327        <activity android:name="com.zopnote.android.merchant.addroute.AddRouteActivity" >
+327-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:302:9-304:20
+327-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:303:13-54
+328        </activity>
+329        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantProfileActivity" >
+329-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:305:9-307:20
+329-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:306:13-66
+330        </activity>
+331        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantKYCActivity" >
+331-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:308:9-310:20
+331-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:309:13-62
+332        </activity>
+333        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantBankInfoActivity" >
+333-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:311:9-313:20
+333-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:312:13-67
+334        </activity>
+335        <activity android:name="com.zopnote.android.merchant.merchantsetup.ShopSetupActivity" >
+335-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:314:9-316:20
+335-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:315:13-60
+336        </activity>
+337        <activity android:name="com.zopnote.android.merchant.merchantsetup.ProductSetupActivity" >
+337-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:317:9-319:20
+337-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:318:13-63
+338        </activity>
+339        <activity android:name="com.zopnote.android.merchant.activatemerchant.ActivateMerchantActivity" >
+339-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:320:9-322:20
+339-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:321:13-70
+340        </activity>
+341        <activity
+341-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:35:9-38:40
+342            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+342-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:36:13-86
+343            android:exported="true"
+343-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:37:13-36
+344            android:noHistory="true" />
+344-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:38:13-37
+345        <!--
+346             The initialization ContentProvider will call AccountKit.initialize automatically
+347             with the application context. This config is merged in with the host app's manifest,
+348             but there can only be one provider with the same authority activated at any given
+349             point; so if the end user has two or more different apps that use AccountKit, only the
+350             first one will be able to use the provider. To work around this problem, we use the
+351             following placeholder in the authority to identify each host application as if it was
+352             a completely different provider.
+353        -->
+354        <provider
+354-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:49:9-52:40
+355            android:name="com.facebook.accountkit.internal.AccountKitInitProvider"
+355-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:50:13-83
+356            android:authorities="com.zopnote.android.dealer.debug.AccountKitInitialization"
+356-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:51:13-76
+357            android:exported="false" />
+357-->[com.facebook.android:account-kit-sdk:5.4.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d11b4469a5746b861e3d0f0c7e725a20\account-kit-sdk-5.4.0\AndroidManifest.xml:52:13-37
+358
+359        <activity
+359-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:23:9-27:75
+360            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+360-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:24:13-93
+361            android:excludeFromRecents="true"
+361-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:25:13-46
+362            android:exported="false"
+362-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:26:13-37
+363            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+363-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:27:13-72
+364        <!--
+365            Service handling Google Sign-In user revocation. For apps that do not integrate with
+366            Google Sign-In, this service will never be started.
+367        -->
+368        <service
+368-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:33:9-36:110
+369            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+369-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:34:13-89
+370            android:exported="true"
+370-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:35:13-36
+371            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+371-->[com.google.android.gms:play-services-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b02389881da09ac75472e63dbe89cb6f\play-services-auth-11.8.0\AndroidManifest.xml:36:13-107
+372
+373        <activity
+373-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:23:9-29:75
+374            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+374-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:24:13-85
+375            android:excludeFromRecents="true"
+375-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:25:13-46
+376            android:exported="true"
+376-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:26:13-36
+377            android:launchMode="singleInstance"
+377-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:27:13-48
+378            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+378-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:28:13-102
+379            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+379-->[com.google.firebase:firebase-auth:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\92bd919d4cabb90ed25f7cf851eb6feb\firebase-auth-11.8.0\AndroidManifest.xml:29:13-72
+380        <activity
+380-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\77129523cc4832d24a13ad7af5c5628c\play-services-base-11.8.0\AndroidManifest.xml:23:9-26:75
+381            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+381-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\77129523cc4832d24a13ad7af5c5628c\play-services-base-11.8.0\AndroidManifest.xml:24:13-79
+382            android:exported="false"
+382-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\77129523cc4832d24a13ad7af5c5628c\play-services-base-11.8.0\AndroidManifest.xml:25:13-37
+383            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+383-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\77129523cc4832d24a13ad7af5c5628c\play-services-base-11.8.0\AndroidManifest.xml:26:13-72
+384        <activity
+384-->[com.karumi:dexter:4.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1369a2d621b2eeacf5b38e2b47231e0a\dexter-4.2.0\AndroidManifest.xml:27:9-29:72
+385            android:name="com.karumi.dexter.DexterActivity"
+385-->[com.karumi:dexter:4.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1369a2d621b2eeacf5b38e2b47231e0a\dexter-4.2.0\AndroidManifest.xml:28:13-60
+386            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+386-->[com.karumi:dexter:4.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1369a2d621b2eeacf5b38e2b47231e0a\dexter-4.2.0\AndroidManifest.xml:29:13-69
+387
+388        <provider
+388-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a4cc98959bef37bdadd267a7f6c87805\extensions-1.1.0\AndroidManifest.xml:23:9-27:43
+389            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+389-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a4cc98959bef37bdadd267a7f6c87805\extensions-1.1.0\AndroidManifest.xml:24:13-83
+390            android:authorities="com.zopnote.android.dealer.debug.lifecycle-trojan"
+390-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a4cc98959bef37bdadd267a7f6c87805\extensions-1.1.0\AndroidManifest.xml:25:13-68
+391            android:exported="false"
+391-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a4cc98959bef37bdadd267a7f6c87805\extensions-1.1.0\AndroidManifest.xml:26:13-37
+392            android:multiprocess="true" />
+392-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a4cc98959bef37bdadd267a7f6c87805\extensions-1.1.0\AndroidManifest.xml:27:13-40
+393        <provider
+393-->[com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1d8a1091ed80fd44867945c37a3b7cea\crashlytics-2.9.1\AndroidManifest.xml:12:9-16:39
+394            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+394-->[com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1d8a1091ed80fd44867945c37a3b7cea\crashlytics-2.9.1\AndroidManifest.xml:13:13-75
+395            android:authorities="com.zopnote.android.dealer.debug.crashlyticsinitprovider"
+395-->[com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1d8a1091ed80fd44867945c37a3b7cea\crashlytics-2.9.1\AndroidManifest.xml:14:13-75
+396            android:exported="false"
+396-->[com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1d8a1091ed80fd44867945c37a3b7cea\crashlytics-2.9.1\AndroidManifest.xml:15:13-37
+397            android:initOrder="100" />
+397-->[com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1d8a1091ed80fd44867945c37a3b7cea\crashlytics-2.9.1\AndroidManifest.xml:16:13-36
+398
+399        <service
+399-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:27:9-30:40
+400            android:name="com.google.android.gms.tagmanager.TagManagerService"
+400-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:28:13-79
+401            android:enabled="true"
+401-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:29:13-35
+402            android:exported="false" />
+402-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:30:13-37
+403
+404        <activity
+404-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:32:9-44:20
+405            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+405-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:33:13-87
+406            android:exported="true"
+406-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:34:13-36
+407            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+407-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:35:13-37
+408            <intent-filter>
+408-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:36:13-43:29
+409                <data android:scheme="tagmanager.c.com.zopnote.android.dealer.debug" />
+409-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:37:17-72
+409-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:37:23-69
+410
+411                <action android:name="android.intent.action.VIEW" />
+411-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:39:17-69
+411-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:39:25-66
+412
+413                <category android:name="android.intent.category.DEFAULT" />
+413-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:41:17-76
+413-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:41:27-73
+414                <category android:name="android.intent.category.BROWSABLE" />
+414-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:42:17-78
+414-->[com.google.android.gms:play-services-tagmanager-api:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f726373d4327bd129a12ba276ad0ab60\play-services-tagmanager-api-11.8.0\AndroidManifest.xml:42:27-75
+415            </intent-filter>
+416        </activity>
+417
+418        <receiver
+418-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:28:9-32:20
+419            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+419-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:29:13-85
+420            android:enabled="true"
+420-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:30:13-35
+421            android:exported="false" >
+421-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:31:13-37
+422        </receiver>
+423        <receiver
+423-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:33:9-41:20
+424            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+424-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:34:13-100
+425            android:enabled="true"
+425-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:35:13-35
+426            android:exported="true"
+426-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:36:13-36
+427            android:permission="android.permission.INSTALL_PACKAGES" >
+427-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:37:13-69
+428            <intent-filter>
+428-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:38:13-40:29
+429                <action android:name="com.android.vending.INSTALL_REFERRER" />
+429-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:39:17-79
+429-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:39:25-76
+430            </intent-filter>
+431        </receiver>
+432
+433        <service
+433-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:43:9-46:40
+434            android:name="com.google.android.gms.measurement.AppMeasurementService"
+434-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:44:13-84
+435            android:enabled="true"
+435-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:45:13-35
+436            android:exported="false" />
+436-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:46:13-37
+437        <service
+437-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:47:9-51:72
+438            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+438-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:48:13-87
+439            android:enabled="true"
+439-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:49:13-35
+440            android:exported="false"
+440-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:50:13-37
+441            android:permission="android.permission.BIND_JOB_SERVICE" />
+441-->[com.google.firebase:firebase-analytics:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cb805c3f26b3782a73cbcb4c9627d7fd\firebase-analytics-11.8.0\AndroidManifest.xml:51:13-69
+442
+443        <receiver
+443-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:35:9-44:20
+444            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+444-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:36:13-78
+445            android:exported="true"
+445-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:37:13-36
+446            android:permission="com.google.android.c2dm.permission.SEND" >
+446-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:38:13-73
+447            <intent-filter>
+447-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:39:13-43:29
+448                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+448-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:17-81
+448-->F:\Projects\ZopnoteDistributorApp\app\src\main\AndroidManifest.xml:57:25-78
+449
+450                <category android:name="com.zopnote.android.dealer.debug" />
+450-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:42:17-61
+450-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:42:27-58
+451            </intent-filter>
+452        </receiver>
+453        <!--
+454             FirebaseInstanceIdService performs security checks at runtime,
+455             no need for explicit permissions despite exported="true"
+456        -->
+457        <service
+457-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:50:9-56:19
+458            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+458-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:51:13-77
+459            android:exported="true" >
+459-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:52:13-36
+460            <intent-filter android:priority="-500" >
+460-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:53:13-55:29
+460-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:53:28-51
+461                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+461-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:54:17-80
+461-->[com.google.firebase:firebase-iid:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\da38c57eb2537b63531e88606c0e6e64\firebase-iid-11.8.0\AndroidManifest.xml:54:25-77
+462            </intent-filter>
+463        </service>
+464
+465        <provider
+465-->[com.google.firebase:firebase-common:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\02f24b2ad7113b728cb3cff61e56c4b3\firebase-common-11.8.0\AndroidManifest.xml:8:9-12:39
+466            android:name="com.google.firebase.provider.FirebaseInitProvider"
+466-->[com.google.firebase:firebase-common:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\02f24b2ad7113b728cb3cff61e56c4b3\firebase-common-11.8.0\AndroidManifest.xml:9:13-77
+467            android:authorities="com.zopnote.android.dealer.debug.firebaseinitprovider"
+467-->[com.google.firebase:firebase-common:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\02f24b2ad7113b728cb3cff61e56c4b3\firebase-common-11.8.0\AndroidManifest.xml:10:13-72
+468            android:exported="false"
+468-->[com.google.firebase:firebase-common:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\02f24b2ad7113b728cb3cff61e56c4b3\firebase-common-11.8.0\AndroidManifest.xml:11:13-37
+469            android:initOrder="100" />
+469-->[com.google.firebase:firebase-common:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\02f24b2ad7113b728cb3cff61e56c4b3\firebase-common-11.8.0\AndroidManifest.xml:12:13-36
+470
+471        <meta-data
+471-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\389c787d2e0de96aaacc0df662308a19\play-services-basement-11.8.0\AndroidManifest.xml:23:9-25:69
+472            android:name="com.google.android.gms.version"
+472-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\389c787d2e0de96aaacc0df662308a19\play-services-basement-11.8.0\AndroidManifest.xml:24:13-58
+473            android:value="@integer/google_play_services_version" />
+473-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\389c787d2e0de96aaacc0df662308a19\play-services-basement-11.8.0\AndroidManifest.xml:25:13-66
+474    </application>
+475
+476</manifest>

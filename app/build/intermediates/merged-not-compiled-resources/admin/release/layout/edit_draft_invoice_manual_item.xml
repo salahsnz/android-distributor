@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/invoiceItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Adjustment"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/invoiceAmountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20b9"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/invoiceItemAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:maxLines="1"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                tools:text="170" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/editInvoiceItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="12dp"
+            android:tint="@color/gray_50_opaque"
+            app:srcCompat="@drawable/ic_edit_black_16dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/deleteInvoiceItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:tint="@color/gray_50_opaque"
+            app:srcCompat="@drawable/ic_delete_black_16dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

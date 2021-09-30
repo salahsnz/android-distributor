@@ -1,0 +1,180 @@
+
+                                                       
+                                                   
+
+                 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/edit_draft_invoice_frag_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:id="@+id/autoCalculatedInvoiceItemsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--uncomment for preview-->
+                    <!--<include tools:layout="@layout/edit_draft_invoice_auto_generated_item"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/manuallyAddedInvoiceItemsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--uncomment for preview-->
+                    <!--<include tools:layout="@layout/edit_draft_invoice_manual_item"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/FontMedium"
+                        android:layout_weight="1"
+                        android:text="@string/total_due_label"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:maxLines="1"
+                            android:text="\u20b9"
+                            android:textColor="@color/text_primary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/totalDueAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/FontMedium"
+                            android:maxLines="1"
+                            android:textColor="@color/text_primary"
+                            android:textSize="14sp"
+                            tools:text="170"
+                            android:layout_marginRight="90dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:text="@string/actions_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:text="@string/edit_draft_invoice_add_item_title"/>
+
+                <TextView
+                    android:id="@+id/addInvoiceItemButton"
+                    style="@style/FontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="4dp"
+                    android:paddingRight="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/accent"
+                    android:textAllCaps="true"
+                    android:text="@string/add_invoice_item_label"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:text="@string/edit_draft_invoice_edit_subscriptions_title"/>
+
+                <TextView
+                    android:id="@+id/editSubscriptionAndPauses"
+                    style="@style/FontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="4dp"
+                    android:paddingRight="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/accent"
+                    android:textAllCaps="true"
+                    android:text="@string/edit_subscription_and_pauses_label"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <LinearLayout
+                    android:id="@+id/notesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/warning_orange"
+                        android:textSize="14sp"
+                        tools:text="This invoice needs to be edited and invoice amount adjustment needed" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/saveInvoiceChangesButton"
+                    android:theme="@style/NormalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="24dp"
+                    android:text="@string/save_changes_label"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/emptyView"
+            layout="@layout/invoice_not_found_error" />
+
+        <include
+            android:id="@+id/networkErrorView"
+            layout="@layout/network_error" />
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view" />
+    </RelativeLayout>
+         

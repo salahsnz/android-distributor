@@ -1,0 +1,192 @@
+-keep class android.arch.lifecycle.ProcessLifecycleOwnerInitializer { <init>(); }
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+-keep class android.support.v4.content.FileProvider { <init>(); }
+-keep class com.crashlytics.android.CrashlyticsInitProvider { <init>(); }
+-keep class com.facebook.accountkit.internal.AccountKitInitProvider { <init>(); }
+-keep class com.facebook.accountkit.ui.AccountKitActivity { <init>(); }
+-keep class com.facebook.accountkit.ui.AccountKitEmailRedirectActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.gcm.GcmReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(); }
+-keep class com.google.android.gms.tagmanager.TagManagerService { <init>(); }
+-keep class com.google.firebase.auth.internal.FederatedSignInActivity { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.karumi.dexter.DexterActivity { <init>(); }
+-keep class com.zopnote.android.merchant.MyApplication { <init>(); }
+-keep class com.zopnote.android.merchant.activatemerchant.ActivateMerchantActivity { <init>(); }
+-keep class com.zopnote.android.merchant.addarea.AddAreaActivity { <init>(); }
+-keep class com.zopnote.android.merchant.addcustomer.AddCustomerActivity { <init>(); }
+-keep class com.zopnote.android.merchant.addondemanditem.AddOnDemandActivity { <init>(); }
+-keep class com.zopnote.android.merchant.addroute.AddRouteActivity { <init>(); }
+-keep class com.zopnote.android.merchant.addsubscription.AddSubscriptionActivity { <init>(); }
+-keep class com.zopnote.android.merchant.agreement.AgreementActivity { <init>(); }
+-keep class com.zopnote.android.merchant.customers.CustomersActivity { <init>(); }
+-keep class com.zopnote.android.merchant.dailyindent.DailyIndentActivity { <init>(); }
+-keep class com.zopnote.android.merchant.editcustomer.EditCustomerActivity { <init>(); }
+-keep class com.zopnote.android.merchant.editdraftinvoice.EditDraftInvoiceActivity { <init>(); }
+-keep class com.zopnote.android.merchant.home.HomeActivity { <init>(); }
+-keep class com.zopnote.android.merchant.intro.IntroActivity { <init>(); }
+-keep class com.zopnote.android.merchant.invoice.InvoiceActivity { <init>(); }
+-keep class com.zopnote.android.merchant.invoice.editinvoice.EditInvoiceActivity { <init>(); }
+-keep class com.zopnote.android.merchant.login.LoginActivity { <init>(); }
+-keep class com.zopnote.android.merchant.managesubscription.ManageSubscriptionsActivity { <init>(); }
+-keep class com.zopnote.android.merchant.managesubscription.addcustomization.AddCustomizationActivity { <init>(); }
+-keep class com.zopnote.android.merchant.managesubscription.editpause.EditPauseActivity { <init>(); }
+-keep class com.zopnote.android.merchant.managesubscription.editsubscription.EditSubscriptionActivity { <init>(); }
+-keep class com.zopnote.android.merchant.managesubscription.viewcustomization.ViewCustomizationActivity { <init>(); }
+-keep class com.zopnote.android.merchant.merchantsetup.MerchantBankInfoActivity { <init>(); }
+-keep class com.zopnote.android.merchant.merchantsetup.MerchantKYCActivity { <init>(); }
+-keep class com.zopnote.android.merchant.merchantsetup.MerchantProfileActivity { <init>(); }
+-keep class com.zopnote.android.merchant.merchantsetup.ProductSetupActivity { <init>(); }
+-keep class com.zopnote.android.merchant.merchantsetup.ShopSetupActivity { <init>(); }
+-keep class com.zopnote.android.merchant.movecustomer.MoveCustomerActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.AnnouncementNotificationActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.AppUpdateHiddenActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.AppUpdateNotificationActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.GcmInstanceIDListenerService { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.GcmRegistrationIntentService { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.MyGcmListenerService { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.NotificationClearedActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.NotificationContentHiddenActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.inbox.InboxActivity { <init>(); }
+-keep class com.zopnote.android.merchant.notifications.notificationpanel.NotificationDashboardActivity { <init>(); }
+-keep class com.zopnote.android.merchant.products.ProductsActivity { <init>(); }
+-keep class com.zopnote.android.merchant.products.addproduct.AddProductActivity { <init>(); }
+-keep class com.zopnote.android.merchant.products.editproduct.EditProductActivity { <init>(); }
+-keep class com.zopnote.android.merchant.registermerchant.RegisterMerchantActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.ReportsActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.collection.CollectionActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.draftinvoice.DraftInvoiceReportActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.onboarding.OnboardActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.ordersummary.OrderSummaryReportActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.ordersummarycustomerdetails.OrderSummaryCustomerDetailsReportActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.payments.PaymentsActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.settlement.SettlementReportActivity { <init>(); }
+-keep class com.zopnote.android.merchant.reports.subscription.SubscriptionsReportActivity { <init>(); }
+-keep class com.zopnote.android.merchant.search.SearchActivity { <init>(); }
+-keep class com.zopnote.android.merchant.ui.AboutActivity { <init>(); }
+-keep class com.zopnote.android.merchant.ui.SplashActivity { <init>(); }
+-keep class com.zopnote.android.merchant.ui.WebViewActivity { <init>(); }
+-keep class com.zopnote.android.merchant.updateinvoice.UpdateInvoiceActivity { <init>(); }
+-keep class com.zopnote.android.merchant.util.RemoteConfigRefreshService { <init>(); }
+-keep class com.zopnote.android.merchant.vendor.VendorsActivity { <init>(); }
+-keep class com.zopnote.android.merchant.viewcustomer.ViewCustomerActivity { <init>(); }
+-keep class com.zopnote.android.merchant.viewinvoicehistory.ViewInvoiceHistoryActivity { <init>(); }
+-keep class android.support.constraint.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.AppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.FloatingActionButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.NavigationView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.TabLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.design.widget.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v4.view.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v4.widget.DrawerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v4.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.SearchView { <init>(android.content.Context); }
+
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.SwitchCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.support.v7.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.volley.toolbox.NetworkImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.AccountKitSpinner { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.AspectFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.ClearBackgroundTextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.ConstrainedLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.NotifyingEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.accountkit.ui.WhatsAppButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.zopnote.android.merchant.intro.ScrollingViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.zopnote.android.merchant.util.CircularNetworkImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.zopnote.android.merchant.util.MobileNumberEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.zopnote.android.merchant.util.SquareLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** onClickPrivacy(android.view.View); }
+
+-keepclassmembers class * { *** onClickShare(android.view.View); }
+
+-keepclassmembers class * { *** onClickTos(android.view.View); }
+
+-keepclassmembers class * { *** onCross(android.view.View); }
+

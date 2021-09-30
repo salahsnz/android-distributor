@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+                 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/settlement_report_frag_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:tag="binding_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp">
+
+
+
+                            <TextView
+                                android:textAllCaps="true"
+                                style="@style/FontMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp"
+                                android:text="@string/total_amount_billed_label" />
+
+                            <TextView
+                                style="@style/FontMedium"
+                                android:id="@+id/billedAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp"
+                                android:layout_gravity="end"
+                                tools:text="\u20b9 1,000.00" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                android:text="@string/current_month_label" />
+
+                            <TextView
+                                android:id="@+id/currentBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/text_primary"
+                                android:textSize="14sp"
+                                android:layout_gravity="end"
+                                tools:text="\u20b9 1,000.00" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="14sp"
+                                android:textStyle="italic"
+                                android:text="@string/previous_month_unpaid" />
+
+                            <TextView
+                                android:id="@+id/previousBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="14sp"
+                                android:layout_gravity="end"
+                                tools:text="\u20b9 1,000.00" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"/>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_secondary"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_pending_label"
+                            android:textAllCaps="true"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:id="@+id/totalAmountUnpaid"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="@color/warning_red"
+                            android:textSize="16sp"
+                            tools:text="₹999,999.99" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cash_collection_label"
+                            android:textAllCaps="true"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:id="@+id/cashCollectionAmount"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            tools:text="₹999,999.99" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/online_collection_label"
+                            android:textAllCaps="true"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:id="@+id/onlineCollectionAmount"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            tools:text="₹999,999.99" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_secondary"/>
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_secondary"/>
+                <include
+                    android:id="@+id/amountBreakupLayout"
+                    layout="@layout/settlement_amount_breakup_layout" />
+
+                <include android:id="@+id/settlementDetailsLayout"
+                    layout="@layout/settlement_details_layout"/>
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/reqAdvance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:theme="@style/SubduedButton"
+                    android:text="Add Advance"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <include
+            android:id="@+id/emptyView"
+            layout="@layout/no_content_error" />
+
+        <include
+            android:id="@+id/networkErrorView"
+            layout="@layout/network_error" />
+
+        <include
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view" />
+
+    </RelativeLayout>
+
+         

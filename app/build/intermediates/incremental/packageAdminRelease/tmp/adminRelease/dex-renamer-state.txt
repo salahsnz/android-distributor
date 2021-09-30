@@ -1,0 +1,4 @@
+#Sat Sep 04 16:04:55 IST 2021
+base.0=C\:\\Zopnote\\Zopnote2\\ZopnoteDistributorApp\\app\\build\\intermediates\\dex\\adminRelease\\minifyAdminReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

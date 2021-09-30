@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/ZopnoteDistributorApp/app/src/main/res/layout/edit_invoice_act.xml" value="0.1" />
+        <entry key="..\:/Projects/ZopnoteDistributorApp/app/src/main/res/layout/invoicehistory_item.xml" value="0.18931159420289856" />
+        <entry key="..\:/Projects/ZopnoteDistributorApp/app/src/main/res/layout/onboard_report_item.xml" value="0.22" />
+        <entry key="..\:/Projects/ZopnoteDistributorApp/app/src/main/res/menu/edit_customer_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Zopnote/Zopnote2/ZopnoteDistributorApp/app/src/main/res/layout/onboard_report_item.xml" value="0.18" />
+        <entry key="..\:/Zopnote/Zopnote2/ZopnoteDistributorApp/app/src/main/res/layout/view_customer_frag.xml" value="0.22" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/customers_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/draft_invoices_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/home_grid_item.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/inbox_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/indent_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/invoice_not_found_error.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/location_frag.xml" value="0.12" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/network_error.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/no_content_available.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/no_content_error.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/payments_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/products_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/search_results_empty_view.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/subscription_item.xml" value="0.1" />
+        <entry key="..\:/Zopnote/Zopnote2/android-distributor/app/src/main/res/layout/vendors_empty_view.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,3 @@
+C:/Zopnote/Zopnote2/ZopnoteDistributorApp/app/.cxx/cmake/adminRelease/arm64-v8a/CMakeFiles/native-lib.dir
+C:/Zopnote/Zopnote2/ZopnoteDistributorApp/app/.cxx/cmake/adminRelease/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Zopnote/Zopnote2/ZopnoteDistributorApp/app/.cxx/cmake/adminRelease/arm64-v8a/CMakeFiles/rebuild_cache.dir

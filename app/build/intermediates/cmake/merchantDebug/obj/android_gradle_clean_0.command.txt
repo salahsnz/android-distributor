@@ -1,0 +1,7 @@
+Executable : C:\Users\hp\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\Projects\ZopnoteDistributorApp\app\.cxx\cmake\merchantDebug\armeabi-v7a
+clean
+jvmArgs : 
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/merchantKYCFrag">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stepTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:background="@color/gray_bg"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_primary"
+                    tools:text=""/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/kyc">
+                </ImageView>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/panNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pan_no_label"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                        android:imeOptions="actionNext"
+                        android:maxLength="10"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/aadharNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/aadhar_no_label"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Aadhar Proof"
+                    android:textSize="14dp"
+                    android:textColor="@color/gray_50_opaque"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/viewBillRelative"
+                        android:visibility="visible"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/iv_bill"
+                            android:layout_gravity="center"
+                            android:background="@drawable/zopnote_logo1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            />
+                        <ImageView
+                            android:paddingTop="1dp"
+                            android:paddingRight="1dp"
+                            android:layout_alignRight="@+id/iv_bill"
+                            android:visibility="gone"
+                            android:id="@+id/deleteImg"
+                            app:srcCompat="@drawable/ic_cancel_red_24dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/takePhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right"
+                            android:padding="8dp"
+
+                            android:background="@drawable/rounded_gray_rectangle_border">
+                            <ImageView
+                                app:srcCompat="@drawable/ic_camera_alt_black_24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_gravity="center"
+                                android:textAllCaps="true"
+                                style="@style/FontMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Take Photo"
+                                android:textColor="@color/text_primary"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/pickPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="right"
+                            android:padding="8dp"
+                            android:background="@drawable/rounded_gray_rectangle_border">
+                            <ImageView
+                                app:srcCompat="@drawable/ic_image_black_24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_gravity="center"
+                                android:textAllCaps="true"
+                                style="@style/FontMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="select Photo"
+                                android:textColor="@color/text_primary"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black_50"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <CheckedTextView
+                        android:id="@+id/checkedText_agreement"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text_secondary"
+                        android:paddingTop="15dp"
+                        android:textSize="16dp"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        tools:text="Agreement Sign Off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/agreementView"
+                        android:paddingLeft="40dp"
+                        android:textColor="@color/blue_400"
+                        android:textStyle="bold"
+                        android:text="View" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/title_activity_app_update_notification"
+                        android:id="@+id/submitKYC"
+                        android:enabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingHorizontal="24dp"
+                        android:theme="@style/SubduedButton" />
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/next_label"
+                        android:id="@+id/skipKYC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingHorizontal="24dp"
+                        android:theme="@style/NormalButton" />
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/button_close"
+                        android:id="@+id/closeKYC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingHorizontal="24dp"
+                        android:theme="@style/NormalButton" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--/FrameLayout-->
+            <include
+                android:id="@+id/networkErrorView"
+                layout="@layout/network_error" />
+
+            <include
+                android:id="@+id/loadingView"
+                layout="@layout/loading_view" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--/android.support.design.widget.CoordinatorLayout-->
+</layout>

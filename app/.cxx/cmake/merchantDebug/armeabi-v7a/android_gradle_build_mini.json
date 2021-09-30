@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "F:\\Projects\\ZopnoteDistributorApp\\app\\CMakeLists.txt",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android-legacy.toolchain.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\compiler_id.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-armeabi-v7a": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\armeabi-v7a\" native-lib",
+      "abi": "armeabi-v7a",
+      "output": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\cmake\\merchantDebug\\obj\\armeabi-v7a\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/order_summary_customer_details_report_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            android:layout_marginVertical="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/invoiceNumber"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="0.8"
+                android:paddingLeft="7sp"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/invoiceDate"
+                android:textColor="@color/text_secondary"
+                android:layout_weight="0.5"
+                android:layout_width="0px"
+                android:paddingLeft="5sp"
+                android:layout_height="50px"
+                android:textSize="14sp"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/invoiceAmount"
+                android:textColor="@color/text_secondary"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="0.8"
+                android:gravity="end"
+                android:textAlignment="gravity"
+                android:textSize="14sp"
+                tools:text="\u20b9 40,000.00"  />
+
+            <TextView
+                android:id="@+id/status"
+                android:textColor="@color/text_secondary"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="1.2"
+                android:textSize="12sp"
+                android:paddingLeft="40dp"
+                android:textStyle="bold"
+                tools:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+    </LinearLayout>
+
+         

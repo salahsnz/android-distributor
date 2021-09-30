@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/advancePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20sp"
+                android:text="@string/menu_add_area_title"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp" />
+
+            <EditText
+                android:inputType="textCapSentences"
+                android:id="@+id/editTXTaddArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:lines="1"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit_label"
+                android:theme="@style/NormalButton" />
+        </LinearLayout>
+
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/emptyView"
+            layout="@layout/no_content_error" />
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/networkErrorView"
+            layout="@layout/network_error" />
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/loadingView"
+            layout="@layout/loading_view" />
+
+    </LinearLayout>
+</layout>

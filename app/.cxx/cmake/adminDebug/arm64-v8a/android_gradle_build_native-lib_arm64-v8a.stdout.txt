@@ -1,0 +1,3 @@
+ninja: Entering directory `C:\Zopnote\Zopnote2\android-distributor\app\.cxx\cmake\adminDebug\arm64-v8a'
+[1/2] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o
+[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\adminDebug\obj\arm64-v8a\libnative-lib.so

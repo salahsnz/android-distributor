@@ -1,0 +1,3 @@
+F:/Projects/ZopnoteDistributorApp/app/.cxx/cmake/merchantDebug/arm64-v8a/CMakeFiles/native-lib.dir
+F:/Projects/ZopnoteDistributorApp/app/.cxx/cmake/merchantDebug/arm64-v8a/CMakeFiles/edit_cache.dir
+F:/Projects/ZopnoteDistributorApp/app/.cxx/cmake/merchantDebug/arm64-v8a/CMakeFiles/rebuild_cache.dir

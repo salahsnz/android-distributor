@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/customer_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        tools:text="Rajesh Badgeri" />
+
+                    <TextView
+                        android:id="@+id/nameMobileSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/bullet_char"
+                        android:textColor="@color/text_hint"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="none"
+                        android:singleLine="true"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        tools:text="9790007482" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/doorNumber"
+                        style="@style/FontMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        tools:text="136" />
+
+                    <LinearLayout
+                        android:id="@+id/addressLine1Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/bullet_char"
+                            android:textColor="@color/text_hint"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/addressLine1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="16sp"
+                            tools:text="I Floor, Block B" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addressLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    tools:text="Ferns City" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/invoiceAmountLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="\u20b9"
+                        android:textColor="@color/warning_red"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/invoiceAmount"
+                        style="@style/FontMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="@color/warning_red"
+                        android:textSize="20sp"
+                        tools:text="2,345" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/invoicePaidStatusLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                   <!-- <ImageView
+                        android:id="@+id/selectedIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/accent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/ic_check_black_24dp" />-->
+                    <TextView
+                        style="@style/FontMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/payment_paid_label"
+                        android:textColor="@color/accent"
+                        android:textSize="16sp" />
+                       <!-- <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:text="\u20b9"
+                            android:textColor="@color/accent"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/invoicePaidAmount"
+                            style="@style/FontMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="@color/accent"
+                            android:textSize="20sp"
+                            tools:text="2,345" />
+
+-->
+                    </LinearLayout>
+                <Button
+                    android:textSize="10dp"
+                    android:id="@+id/addNewOrder"
+                    android:theme="@style/NormalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_order"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/highlightBar"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/warning_orange"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+         

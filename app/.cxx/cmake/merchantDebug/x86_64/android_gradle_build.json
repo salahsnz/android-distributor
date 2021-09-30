@@ -1,0 +1,45 @@
+{
+  "stringTable": {
+    "0": "F:/Projects/ZopnoteDistributorApp/app/.cxx/cmake/merchantDebug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/hp/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/hp/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "F:\\Projects\\ZopnoteDistributorApp\\app\\CMakeLists.txt",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android-legacy.toolchain.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\compiler_id.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\ZopnoteDistributorApp\\app\\.cxx\\cmake\\merchantDebug\\x86_64\" native-lib",
+      "buildType": "debug",
+      "toolchain": "2950296244",
+      "abi": "x86_64",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\cpp\\native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\cmake\\merchantDebug\\obj\\x86_64\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2950296244": {
+      "cppCompilerExecutable": "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

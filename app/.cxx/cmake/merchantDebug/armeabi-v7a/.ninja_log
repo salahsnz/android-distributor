@@ -1,0 +1,18 @@
+# ninja log v5
+1	15527	651076023	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ac451e4fc9c06e7f
+15531	23366	651076031	../../../../build/intermediates/cmake/merchantDebug/obj/armeabi-v7a/libnative-lib.so	2ac0c479cfe32e2d
+0	22	0	clean	e4db1a9c60b3458b
+0	27	0	clean	e4db1a9c60b3458b
+0	20	0	clean	e4db1a9c60b3458b
+0	12	0	clean	e4db1a9c60b3458b
+1	18	0	clean	e4db1a9c60b3458b
+6	1517	651513406	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ac451e4fc9c06e7f
+1517	4023	651513409	../../../../build/intermediates/cmake/merchantDebug/obj/armeabi-v7a/libnative-lib.so	2ac0c479cfe32e2d
+0	16	0	clean	e4db1a9c60b3458b
+0	15	0	clean	e4db1a9c60b3458b
+0	13	0	clean	e4db1a9c60b3458b
+0	14	0	clean	e4db1a9c60b3458b
+0	17	0	clean	e4db1a9c60b3458b
+0	16	0	clean	e4db1a9c60b3458b
+0	13	0	clean	e4db1a9c60b3458b
+0	12	0	clean	e4db1a9c60b3458b

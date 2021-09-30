@@ -1,0 +1,5 @@
+# ninja log v5
+0	414	652107350	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	9a3a7e61dfd30922
+416	1101	652107351	../../../../build/intermediates/cmake/merchantRelease/obj/arm64-v8a/libnative-lib.so	b65d4d11bdb73ab6
+0	10	0	clean	ee926e7fd3bd3518
+0	15	0	clean	ee926e7fd3bd3518

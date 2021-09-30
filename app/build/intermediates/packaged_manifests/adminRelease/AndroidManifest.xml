@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zopnote.android.dealer"
+    android:versionCode="35"
+    android:versionName="0.9.34" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- for GcmTaskService -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.zopnote.android.dealer.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.zopnote.android.dealer.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.zopnote.android.merchant.MyApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+
+        <!-- Facebook Account Kit -->
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/zopnote_notification_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- Fabric -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="408c56feeb9d90d483b49031434a184a450817f0" />
+
+        <service
+            android:name="com.zopnote.android.merchant.util.RemoteConfigRefreshService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.zopnote.android.merchant.notifications.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.zopnote.android.merchant.notifications.GcmInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.zopnote.android.merchant.notifications.GcmRegistrationIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- For pre-4.4 Kitkat -->
+                <category android:name="in.ireff.android" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.distributor.myfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:label="@string/com_accountkit_button_log_in"
+            android:launchMode="singleTop"
+            android:theme="@style/AccountKitTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.zopnote.android.merchant.home.HomeActivity"
+            android:theme="@style/AppTheme.DrawerLayout" />
+        <activity
+            android:name="com.zopnote.android.merchant.customers.CustomersActivity"
+            android:label="@string/title_activity_customers" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.addcustomer.AddCustomerActivity"
+            android:label="@string/title_activity_add_customer" />
+        <activity
+            android:name="com.zopnote.android.merchant.dailyindent.DailyIndentActivity"
+            android:label="@string/title_activity_daily_indent" />
+        <activity
+            android:name="com.zopnote.android.merchant.invoice.InvoiceActivity"
+            android:label="@string/title_activity_invoice" />
+        <activity
+            android:name="com.zopnote.android.merchant.viewcustomer.ViewCustomerActivity"
+            android:label="@string/title_activity_view_customer" />
+        <activity
+            android:name="com.zopnote.android.merchant.addarea.AddAreaActivity"
+            android:label="@string/menu_add_area_title" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.products.ProductsActivity"
+            android:label="@string/nav_products" />
+        <activity
+            android:name="com.zopnote.android.merchant.intro.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zopnote.android.merchant.ui.SplashActivity"
+            android:theme="@style/AppTheme.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.ui.AboutActivity"
+            android:label="@string/title_activity_about" />
+        <activity
+            android:name="com.zopnote.android.merchant.ui.WebViewActivity"
+            android:label="@string/info_label" />
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.NotificationContentHiddenActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.NotificationClearedActivity"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.AppUpdateHiddenActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.AppUpdateNotificationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_app_update_notification"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.zopnote.android.merchant.home.HomeActivity"
+            android:taskAffinity="" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.AnnouncementNotificationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_announcement"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.zopnote.android.merchant.home.HomeActivity"
+            android:taskAffinity="" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.HomeActivity" />
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.login.LoginActivity" />
+        <activity
+            android:name="com.zopnote.android.merchant.search.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.vendor.VendorsActivity"
+            android:label="Select Vendor" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.editcustomer.EditCustomerActivity"
+            android:label="Edit Customer" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.addsubscription.AddSubscriptionActivity"
+            android:label="Add Subscription" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.movecustomer.MoveCustomerActivity"
+            android:label="@string/title_activity_move_customer" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.ReportsActivity"
+            android:label="@string/title_activity_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.onboarding.OnboardActivity"
+            android:label="@string/title_activity_onboarding_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.payments.PaymentsActivity"
+            android:label="@string/title_activity_payments" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.managesubscription.ManageSubscriptionsActivity"
+            android:label="@string/title_activity_manage_subscriptions" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.managesubscription.editsubscription.EditSubscriptionActivity"
+            android:label="@string/title_activity_edit_subscription" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.managesubscription.editpause.EditPauseActivity"
+            android:label="@string/title_activity_edit_pause" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.invoice.editinvoice.EditInvoiceActivity"
+            android:label="@string/title_activity_edit_invoice" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.subscription.SubscriptionsReportActivity"
+            android:label="@string/title_activity_subscriptions" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.draftinvoice.DraftInvoiceReportActivity"
+            android:label="@string/title_activity_invoice_preview_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.editdraftinvoice.EditDraftInvoiceActivity"
+            android:label="@string/title_activity_edit_draft_invoice" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.settlement.SettlementReportActivity"
+            android:label="@string/title_activity_settlement_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.ordersummary.OrderSummaryReportActivity"
+            android:label="@string/title_activity_order_summary_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.ordersummarycustomerdetails.OrderSummaryCustomerDetailsReportActivity"
+            android:label="@string/title_activity_order_summary_customer_details_report" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.managesubscription.viewcustomization.ViewCustomizationActivity"
+            android:label="@string/title_activity_view_customization" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.managesubscription.addcustomization.AddCustomizationActivity"
+            android:label="@string/title_activity_add_customization" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.products.editproduct.EditProductActivity" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.products.addproduct.AddProductActivity"
+            android:label="@string/title_activity_add_product" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.reports.collection.CollectionActivity"
+            android:label="@string/title_activity_collection" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.viewinvoicehistory.ViewInvoiceHistoryActivity"
+            android:label="@string/title_activity_view_invoice_history" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.updateinvoice.UpdateInvoiceActivity"
+            android:label="@string/title_activity_update_invoice" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.registermerchant.RegisterMerchantActivity"
+            android:label="@string/title_activity_register_merchant" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.addondemanditem.AddOnDemandActivity"
+            android:label="@string/title_activity_AddOnDemandItem" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.inbox.InboxActivity"
+            android:label="@string/title_activity_notification_inbox"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.agreement.AgreementActivity" >
+        </activity>
+        <activity
+            android:name="com.zopnote.android.merchant.notifications.notificationpanel.NotificationDashboardActivity"
+            android:label="@string/title_activity_notification_dashboard" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.addroute.AddRouteActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantProfileActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantKYCActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.merchantsetup.MerchantBankInfoActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.merchantsetup.ShopSetupActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.merchantsetup.ProductSetupActivity" >
+        </activity>
+        <activity android:name="com.zopnote.android.merchant.activatemerchant.ActivateMerchantActivity" >
+        </activity>
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <!--
+             The initialization ContentProvider will call AccountKit.initialize automatically
+             with the application context. This config is merged in with the host app's manifest,
+             but there can only be one provider with the same authority activated at any given
+             point; so if the end user has two or more different apps that use AccountKit, only the
+             first one will be able to use the provider. To work around this problem, we use the
+             following placeholder in the authority to identify each host application as if it was
+             a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.accountkit.internal.AccountKitInitProvider"
+            android:authorities="com.zopnote.android.dealer.AccountKitInitialization"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+
+        <provider
+            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.zopnote.android.dealer.lifecycle-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.zopnote.android.dealer.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:exported="true"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.zopnote.android.dealer" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.zopnote.android.dealer" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.zopnote.android.dealer.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

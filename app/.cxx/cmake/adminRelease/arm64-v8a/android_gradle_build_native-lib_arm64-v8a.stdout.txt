@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Zopnote\Zopnote2\ZopnoteDistributorApp\app\.cxx\cmake\adminRelease\arm64-v8a'
+ninja: no work to do.

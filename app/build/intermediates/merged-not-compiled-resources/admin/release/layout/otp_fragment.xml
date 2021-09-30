@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zopnote_logo"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Enter OTP"
+            android:textColor="@color/text_primary"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/layout_otp"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_below="@+id/layout_header"
+        android:orientation="horizontal">
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editTextone"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusRight="@+id/editText_two">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editTexttwo"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editTextthree"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editTextfour"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:inputType="number"
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/changeNumber"
+            style="@style/FontMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+           android:layout_gravity=""
+            android:textSize="14sp"
+            android:textColor="@color/accent"
+            android:textAllCaps="false"
+            android:text="Change number"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/resendOTP"
+            style="@style/FontMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="Resend OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/accent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

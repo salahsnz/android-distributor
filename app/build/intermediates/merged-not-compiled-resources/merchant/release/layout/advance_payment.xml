@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+    <LinearLayout
+        android:id="@+id/advancePayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10sp"
+         android:tag="layout/advance_payment_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/enter_part_advance_amount_label"/>
+        <EditText
+            android:id="@+id/editTXTadvpayment"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:lines="1"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+         

@@ -1,0 +1,530 @@
+[
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\customers_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\customers_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\collection_summary_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\collection_summary_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_total.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_total.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_report_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_report_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\settlement_amount_breakup_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\settlement_amount_breakup_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\daily_indent_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\daily_indent_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_report_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_report_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\move_customer_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\move_customer_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_customer_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_customer_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_cd_selection.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_cd_selection.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\daily_indent_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\daily_indent_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_delivery_days_and_price_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_delivery_days_and_price_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\shop_setup_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\shop_setup_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\move_customer_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\move_customer_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\onboard_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\onboard_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\inbox_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\inbox_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\vendors_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\vendors_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscription_report_subscription_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscription_report_subscription_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\datewise_invoice_item_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\datewise_invoice_item_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_pause_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_pause_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\inbox_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\inbox_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\customers_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\customers_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\search_results_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\search_results_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\login_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\login_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_customer_details_report_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_customer_details_report_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_report_item_sticky_header.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_report_item_sticky_header.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\customer_subscription_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\customer_subscription_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_subscription_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_subscription_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_report_item_header.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_report_item_header.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\invoice_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\invoice_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_price_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_price_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\inbox_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\inbox_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\intro_page.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\intro_page.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\draft_invoices_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\draft_invoices_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\indent_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\indent_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\update_invoice_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\update_invoice_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\no_content_available.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\no_content_available.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_customer_details_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_customer_details_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\product_setup_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\product_setup_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\network_error.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\network_error.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_customer_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_customer_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_product_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_product_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\collection_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\collection_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\date_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\date_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\loading_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\loading_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\collection_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\collection_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\register_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\register_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\vendors_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\vendors_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\ordersummary_report_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\ordersummary_report_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\invoice_not_found_error.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\invoice_not_found_error.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\products_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\products_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\products_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\products_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_customization_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_customization_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_route_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_route_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\collection_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\collection_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\payment_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\payment_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\review_subscription_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\review_subscription_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\reports_activity.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\reports_activity.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_customer_details_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_customer_details_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_product_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_product_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_delivery_days_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_delivery_days_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_customization_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_customization_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\settlement_details_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\settlement_details_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_postpaid_customization_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_postpaid_customization_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\no_content_error.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\no_content_error.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\manage_subscription_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\manage_subscription_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\onboard_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\onboard_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\door_number_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\door_number_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\product_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\product_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_prepaid_customization_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_prepaid_customization_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_draft_invoice_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_draft_invoice_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\merchant_bank_info_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\merchant_bank_info_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\bill_image_preview_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\bill_image_preview_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\merchant_kyc_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\merchant_kyc_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\invoice_history_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\invoice_history_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_customer_content.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_customer_content.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\draft_invoice_report_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\draft_invoice_report_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\merchant_profile_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\merchant_profile_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\draft_invoice_report_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\draft_invoice_report_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_customization_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_customization_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\payments_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\payments_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\invoicehistory_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\invoicehistory_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\pause_subscription_dialog.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\pause_subscription_dialog.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\ordersummary_customer_details_report_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\ordersummary_customer_details_report_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\activate_merchant_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\activate_merchant_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_product_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_product_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\indent_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\indent_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_details_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_details_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\settlement_report_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\settlement_report_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_customer_details_total.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_customer_details_total.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\custom_spinner_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\custom_spinner_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\advance_payment.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\advance_payment.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\search_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\search_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\customer_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\customer_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\custom_product_items.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\custom_product_items.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\draft_invoice_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\draft_invoice_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_invoice_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_invoice_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_product_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_product_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_delivery_days_and_pricing_layout.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_delivery_days_and_pricing_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_report_item_content.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_report_item_content.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\vendor_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\vendor_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\invoicehistory_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\invoicehistory_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_subscription_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_subscription_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\review_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\review_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscription_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscription_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\location_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\location_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\view_customer_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\view_customer_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\notification_dashboard_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\notification_dashboard_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\products_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\products_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\settlement_report_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\settlement_report_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\indent_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\indent_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_product_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_product_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_area_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_area_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscription_report_pause_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscription_report_pause_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_customization_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_customization_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\check_out_date_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\check_out_date_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\subscriptions_report_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\subscriptions_report_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\onboard_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\onboard_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\payments_empty_view.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\payments_empty_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\profile_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\profile_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\payments_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\payments_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\add_ondemand_item_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\add_ondemand_item_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\daily_indent_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\daily_indent_act.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\settlement_report_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\settlement_report_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\manage_subscriptions_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\manage_subscriptions_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\indent_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\indent_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\order_summary_selection.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\order_summary_selection.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\home_frag.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\home_frag.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\pause_item.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\pause_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\ZopnoteDistributorApp\\app\\build\\intermediates\\incremental\\mergeMerchantDebugResources\\stripped.dir\\layout\\edit_draft_invoice_act.xml",
+        "source": "F:\\Projects\\ZopnoteDistributorApp\\app\\src\\main\\res\\layout\\edit_draft_invoice_act.xml"
+    }
+]

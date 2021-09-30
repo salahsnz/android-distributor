@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical" android:tag="layout/subscription_report_subscription_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="Times of india" />
+
+            <TextView
+                android:id="@+id/subscriptionStartDate"
+                android:textColor="@color/text_primary"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="Aug 01"
+                android:gravity="end"/>
+
+            <TextView
+                android:id="@+id/subscriptionEndDate"
+                android:textColor="@color/text_primary"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                tools:text="Aug 31"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pausesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <View
+            android:id="@+id/subscriptionDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/divider" />
+    </LinearLayout>
+         

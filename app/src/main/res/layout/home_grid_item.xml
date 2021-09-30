@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zopnote.android.merchant.util.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/circle_accent_bg"
+            app:srcCompat="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/FontMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:textAlignment="center"
+            tools:text="Daily Purchase Order"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</com.zopnote.android.merchant.util.SquareLayout>

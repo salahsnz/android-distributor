@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Zopnote\Zopnote2\ZopnoteDistributorApp\app\.cxx\cmake\merchantRelease\x86'
+ninja: no work to do.
